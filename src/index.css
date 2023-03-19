@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.br-t-inherit {
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.icon>svg,
+.sideBar-b>span>svg {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.user_details span {
+	color: #9A9A9A;
+}
+
+.user_details,
+.user_details span {
+	font-weight: 600;
+}
+
+
+.mapboxgl-map {
+	@apply rounded-3xl mr-10
+}
+
+body {
+	background-color: #FFFFFF;
+}
