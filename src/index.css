@@ -24,10 +24,12 @@
 }
 
 
-.mapboxgl-map {
-	@apply rounded-3xl mr-10
-}
 
 body {
 	background-color: #FFFFFF;
+}
+
+
+.mapboxgl-map {
+	@apply w-12
 }

@@ -1,15 +1,19 @@
 import React from 'react';
 import { UserModel } from '../../types';
-import { useUserStore } from '../../zustand-store/zustand';
+import { useModalStore, useUserStore } from '../../zustand-store/zustand';
 import { useNavigate } from 'react-router-dom';
 
 function user({data}:{data:UserModel}) {
 	const { setUser} = useUserStore();
+	const { modal,resetModal } = useModalStore()
+
 	const navigate = useNavigate();
 
 	
 const handleClick = () =>{
 	setUser(data)
+	resetModal()
+
 	navigate('/profile') 
 }
 	return (

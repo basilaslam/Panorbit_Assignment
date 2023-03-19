@@ -30,7 +30,9 @@ const modalStoreCreator = persist<ModalStore>(
     resetModal: () => set(() => ({ modal: false })),
   }),
   { name: 'modal-store' }
+
 );
+
 
 export const useModalStore = create(modalStoreCreator);
 

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useUserStore } from '../../zustand-store/zustand';
 import Root from '../Map/Map';
 import { geo } from '../../types';
 
 function PersonalDetails() {
+  
+
+
+  
 	const { user } = useUserStore();
 	let address = user&&Object.entries(user?.address).filter(([key, value]) => key != 'address')
 	address?.pop()	
@@ -72,10 +76,10 @@ function PersonalDetails() {
     </table>
 		</div>
 
-<div className="map">
+{<div className="hidden md:block map">
 {user?.address.geo&&<Root lat={user?.address.geo.lat} lng={user?.address.geo.lng} width={700} height={400} />}
 
-</div>
+</div>}
 	</div>
 
 </div>

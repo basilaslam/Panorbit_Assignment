@@ -1,8 +1,6 @@
 import React from 'react';
-import User from '../user/user';
 import { useUserStore } from '../../zustand-store/zustand';
 import PersonalDetails from '../PersonalDetails/personalDetails';
-import ComingSoon from '../ComingSoon/ComingSoon';
 import UserProfile from '../userProfile/userProfile';
 
 function Main() {

@@ -9,9 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.18.1",
     "@types/react-icons": "^3.0.0",
-    "google-maps-react": "2.0.6",
     "mapbox-gl": "^2.13.0",
     "react": "18.2.0",
     "react-dom": "^18.2.0",

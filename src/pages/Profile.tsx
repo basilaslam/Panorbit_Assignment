@@ -6,6 +6,7 @@ import Main from "../components/Main/Main";
 import ComingSoon from "../components/ComingSoon/ComingSoon";
 import Logout from "../components/Logout/Logout";
 import { useNavigate } from "react-router-dom";
+import Messaging from "../components/Messaging/Messaging";
 
 function Profile() {
 	const [main, setMain] = useState('Profile')
@@ -25,7 +26,7 @@ function Profile() {
 		
 	  <div className="flex justify-start">
 			{modal&&<Logout/>}
-
+			<Messaging/>
 		<div className="left">
 		  <Sidebar onClick={setMain}/>
 		</div>

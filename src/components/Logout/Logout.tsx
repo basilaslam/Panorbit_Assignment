@@ -34,9 +34,9 @@ function Logout() {
 	  }
 
   return (
-	<div className={`fixed w-[400px] right-10 top-52 rounded-xl z-50 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]`}>
+	<div className={`fixed w-64 md:w-[400px]  right-5 md:right-10 md:top-52 top-16 rounded-xl z-50 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]`}>
 		<div className="top mx-auto my-5">
-			<img className='rounded-full w-36 mx-auto' src={user?.profilepicture} alt="" />
+			<img className='rounded-full w-20 md:w-36 mx-auto' src={user?.profilepicture} alt="" />
 			<h1 className='font-2xl text-black  text-center my-3 text-xl '>{user?.name}</h1>
 			<h1 className='font-2xl text-grayed  text-center my-3 text-xl '>{user?.email}</h1>
 		</div>
